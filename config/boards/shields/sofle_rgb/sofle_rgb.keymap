@@ -9,11 +9,11 @@
 
     default_layer {
       bindings = <
-        &kp GRAVE       &kp N1   &kp N2    &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7   &kp N8    &kp N9  &kp N0    &kp BACKSPACE
-        &kp TAB         &kp Q    &kp W     &kp E     &kp R     &kp T                           &kp Y   &kp U    &kp I     &kp O   &kp P     &kp BACKSLASH
-        &kp LCTRL       &kp A    &kp S     &kp D     &kp F     &kp G                           &kp H   &kp J    &kp K     &kp L   &kp SEMI  &kp SINGLE_QUOTE
-        &kp LSHIFT      &kp Z    &kp X     &kp C     &kp V     &kp B     &kp K_PP &out OUT_TOG &kp N   &kp M    &kp COMMA &kp DOT &kp SLASH &mt RSHIFT RPAR
-                                 &kp LGUI  &kp LALT  &kp MINUS &kp SPACE &mo 1        &kp RET &kp RBKT &kp EQUAL &kp ESC
+        &kp N6        &kp N7   &kp N8    &kp N9    &kp N0    &kp BACKSLASH                          &kp N6  &kp N7   &kp N8    &kp N9  &kp N0    &kp BACKSPACE
+        &kp Y         &kp U    &kp I     &kp O     &kp P     &kp BACKSPACE                           &kp Y   &kp U    &kp I     &kp O   &kp P     &kp BACKSLASH
+        &kp H         &kp J    &kp K     &kp L     &kp SEMI  &kp SINGLE_QUOTE                           &kp H   &kp J    &kp K     &kp L   &kp SEMI  &kp SINGLE_QUOTE
+        &kp N         &kp M    &kp COMMA     &kp DOT     &kp SLASH     &kp RSHIFT     &kp K_PP &out OUT_TOG &kp N   &kp M    &kp COMMA &kp DOT &kp SLASH &mt RSHIFT RPAR
+                                 &mo 1    &kp RET  &kp EQUAL &kp RALT &kp RGUI        &kp RET &kp RBKT &kp EQUAL &kp ESC
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -21,10 +21,10 @@
 
     mod_layer {
       bindings = <
-        &kp ESC &kp F1   &kp F2      &kp F3       &kp F4 &kp F5             &kp F6    &kp F7     &kp F8  &kp F9    &kp F10 &kp DELETE
-        &none   &none    &kp LPAR    &kp RPAR     &none  &none              &none     &none      &none   &none     &none   &kp F11
-        &none   &none    &kp LBKT    &kp RBKT     &none  &none              &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &none   &kp F12
-        &none   &none    &kp LBRC    &kp RBRC     &none  &none &none &none  &none     &none      &none   &none     &none   &kp F13
+        &kp F6    &kp F7     &kp F8      &kp F9       &kp F10   &kp F11             &kp F6    &kp F7     &kp F8  &kp F9    &kp F10 &kp DELETE
+        &none     &none      &kp LPAR    &kp RPAR     &none     &kp DELETE              &none     &none      &none   &none     &none   &kp F11
+        &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT    &none     &kp F12              &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &none   &kp F12
+        &none     &none      &kp LBRC    &kp RBRC     &none     &none                  &none &none  &none     &none      &none   &none     &none   &kp F13
                          &none       &none        &none  &none &none &trans &none     &none      &none   &none
       >;
 
